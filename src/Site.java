@@ -4,8 +4,9 @@ public abstract class Site {
     double _rate;
 
     double getBillableAmount() {
+        double base = getBaseAmount();
         double tax = getTaxAmount();
-        return getBaseAmount() + tax;
+        return base + tax;
     }
 
     abstract double getTaxAmount();
