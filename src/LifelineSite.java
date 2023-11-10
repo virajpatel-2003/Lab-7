@@ -1,5 +1,7 @@
 public class LifelineSite extends Site{
-
+        double getBillableAmount() {
+            return super.getBillableAmount();
+        }
 
      @Override
      double getTaxAmount() {
